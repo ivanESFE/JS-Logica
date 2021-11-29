@@ -1,8 +1,22 @@
-let num1 = 20
-let num2 = 9
+let x = 7.3
 
-num1 >= 10 && num1<=50 ? console.log(num1 + ' està entre 10 i 50')
-                       : console.log(num1 + ' no està entre 10 i 50')
+switch (true) {
+    case (x <= 4.99):
+        console.log('Cap a juny maco')
+        break;
+    case (x >= 5 && x <=5.99):
+        console.log('Suficient')
+        break;
+    case (x >=6 && x <= 6.99):
+        console.log('Bé')
+        break;
+    case (x >= 7 && x <= 8.99):
+        console.log('Notable')
+        break;
+    case (x >= 9 && x<=10):
+        console.log('Excel·lent')
+        break;
 
-num2 >= 10 && num1<=50 ? console.log(num2 + ' està entre 10 i 50')
-                       : console.log(num2 + ' no està entre 10 i 50')
+    default:
+        break;
+}
