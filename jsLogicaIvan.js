@@ -1,8 +1,8 @@
-var nom = "hol3 c1m2 t5al"
-var num = nom.replace(/[^0-9]/gi, "")
-let sum =0
+var num=0
+var valor= prompt("Escriu el valor")
 
-for (let i = 0; i < num.length; i++) {
-    sum += Number(num.charAt(i))
+for (var i = 0; i < valor; i++) {
+    console.log('la n = ' + num)
+    num+=1
 }
-console.log(sum)
+console.log('hi han un total de ' + num + '\n i el num de iteracions es de: ' + i)
