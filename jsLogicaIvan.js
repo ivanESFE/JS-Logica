@@ -1,22 +1,24 @@
-let x = 7.3
 
-switch (true) {
-    case (x <= 4.99):
-        console.log('Cap a juny maco')
-        break;
-    case (x >= 5 && x <=5.99):
-        console.log('Suficient')
-        break;
-    case (x >=6 && x <= 6.99):
-        console.log('Bé')
-        break;
-    case (x >= 7 && x <= 8.99):
-        console.log('Notable')
-        break;
-    case (x >= 9 && x<=10):
-        console.log('Excel·lent')
-        break;
-
-    default:
-        break;
+function ordenar(a,b,c){
+    if (a>=b && b>=c) {
+        console.log(a + ' ' + b + ' ' + c)
+    }
+    else if (a>=c && c>=b) {
+        console.log(a + ' ' + c + ' ' + b)
+    }
+    else if(b>=a && a>=c){
+        console.log(b + ' ' + a + ' ' + c)
+    }
+    else if(b>=c && c>=a){
+        console.log(b + ' ' + c + ' ' + a)
+    }
+    else if (c>=a && a>=b) {
+        console.log(c + ' ' + a + ' ' + b)
+    }
+    else{
+        console.log(c + ' ' + b + ' ' + a)
+    }
+        
+    
 }
+console.log(ordenar(9,6,7))
